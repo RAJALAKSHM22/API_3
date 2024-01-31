@@ -12,7 +12,7 @@ show=()=>{
 
 let prom = new Promise( (resolve,reject)=>{
     var request = new XMLHttpRequest();
-    request.open(`GET`,`https://data.covid19india.org/v4/min/data.min.json`);
+    request.open(`GET`,`https://anapioficeandfire.com/api/books`);
 
     request.send();
 
