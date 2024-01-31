@@ -1,7 +1,7 @@
 let division = document.createElement ('div')
-division.innerHTML=`<lable for='txt'> Name of the Area </lable>
+division.innerHTML=`<lable for='txt'> Book Title/Author Name </lable>
 <span>
-<input type ="text" ClassName="txt" placeholder='ENTER HERE'> 
+<input type ="text" ClassName="txt" placeholder='TYPE HERE'> 
 <button type="button" onClick="show()">SEARCH</button>
 </span>`
 document.body.append(division)
@@ -29,7 +29,8 @@ let prom = new Promise( (resolve,reject)=>{
  } )
         prom.then((data)=>(console.log(data))).catch((err)=>(console.log(err)))
 
-        document.getElementsByClassName("res").innerTex="Your results are here!!..."
+        let para=document.getElementsByClassName("res").innerTex="Book list!!..."
+        console.log(para);
 }        
         
 
